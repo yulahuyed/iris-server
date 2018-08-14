@@ -16,5 +16,5 @@ COPY ./Caddyfile /etc/caddy/
 RUN echo "SUCCESS" > /home/index.html
 RUN chmod 777 /home/index.html /etc/caddy/Caddyfile
 
-EXPOSE 80
+EXPOSE 8080
 CMD ["/usr/bin/caddy", "-conf", "/etc/caddy/Caddyfile"]
